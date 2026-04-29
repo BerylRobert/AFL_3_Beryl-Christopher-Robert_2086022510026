@@ -20,7 +20,7 @@ function validateContactForm() {
   // Validate name
   if (name.value.trim().length < 3) {
     name.classList.add('is-invalid');
-    errors.push('Nama harus minimal 3 karakter.');
+    errors.push('Name must be at least 3 characters.');
     isValid = false;
   } else {
     name.classList.add('is-valid');
@@ -30,7 +30,7 @@ function validateContactForm() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email.value.trim())) {
     email.classList.add('is-invalid');
-    errors.push('Format email tidak valid.');
+    errors.push('Invalid Email Format');
     isValid = false;
   } else {
     email.classList.add('is-valid');
@@ -39,19 +39,19 @@ function validateContactForm() {
   // Validate message
   if (message.value.trim().length < 10) {
     message.classList.add('is-invalid');
-    errors.push('Pesan harus minimal 10 karakter.');
+    errors.push('Massage at least 10 characters.');
     isValid = false;
   } else {
     message.classList.add('is-valid');
   }
 
   if (!isValid) {
-    alertBox.innerHTML = '<strong>Oops!</strong> Mohon perbaiki kesalahan berikut:<ul class="mb-0 mt-1">' +
+    alertBox.innerHTML = '<strong>Oops!</strong> Please Fix The Following Error:<ul class="mb-0 mt-1">' +
       errors.map(e => `<li>${e}</li>`).join('') + '</ul>';
     alertBox.classList.remove('d-none');
     alertBox.classList.add('alert-danger');
   } else {
-    alertBox.innerHTML = '✅ <strong>Pesan berhasil dikirim!</strong> Terima kasih, saya akan segera membalas.';
+    alertBox.innerHTML = '✅ <strong>Massage Sent!</strong> Thank you, I will reply soon.';
     alertBox.classList.remove('d-none');
     alertBox.classList.add('alert-success');
     // Reset form
