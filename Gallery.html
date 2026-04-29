@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Beryl Christopher Robert</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Beryl<span>CR</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Project.html">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div style="background: linear-gradient(135deg, #e8f0fe, #cfe2ff); padding: 50px 0 30px;">
+    <div class="container text-center">
+      <h1 class="fw-bold">Gallery</h1>
+      <p class="text-muted">Kumpulan foto kegiatan dan momen belajar</p>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Foto Kegiatan</h2>
+        <div class="underline"></div>
+        <p class="text-muted mt-2">Klik gambar untuk melihat lebih besar</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g1/800/600', 'Kegiatan Belajar di Kampus')">
+            <img src="https://picsum.photos/seed/g1/600/400" alt="Kegiatan Belajar" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Kegiatan Belajar di Kampus</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g2/800/600', 'Praktikum Pemrograman')">
+            <img src="https://picsum.photos/seed/g2/600/400" alt="Praktikum" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Praktikum Pemrograman</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g3/800/600', 'Workshop Web Development')">
+            <img src="https://picsum.photos/seed/g3/600/400" alt="Workshop" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Workshop Web Development</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g4/800/600', 'Diskusi Kelompok')">
+            <img src="https://picsum.photos/seed/g4/600/400" alt="Diskusi" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Diskusi Kelompok</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g5/800/600', 'Seminar Teknologi')">
+            <img src="https://picsum.photos/seed/g5/600/400" alt="Seminar" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Seminar Teknologi</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g6/800/600', 'Pengerjaan Tugas')">
+            <img src="https://picsum.photos/seed/g6/600/400" alt="Tugas" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Pengerjaan Tugas</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g7/800/600', 'Waktu Santai')">
+            <img src="https://picsum.photos/seed/g7/600/400" alt="Santai" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Waktu Santai</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g8/800/600', 'Kegiatan Kampus')">
+            <img src="https://picsum.photos/seed/g8/600/400" alt="Kampus" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Kegiatan Kampus</p></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="gallery-item" onclick="openGalleryModal('https://picsum.photos/seed/g9/800/600', 'Presentasi Proyek')">
+            <img src="https://picsum.photos/seed/g9/600/400" alt="Presentasi" />
+            <div class="gallery-overlay"><p><i class="bi bi-zoom-in me-2"></i>Presentasi Proyek</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY MODAL -->
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center p-0 pb-4">
+          <img id="modalImage" src="" alt="" class="img-fluid rounded" style="max-height: 500px; width: 100%; object-fit: contain;" />
+          <p id="modalCaption" class="mt-3 fw-semibold text-muted px-4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Project.html">Project</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <p>&copy; 2024 Beryl Christopher Robert. Mahasiswa Teknik Informatika.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" onclick="scrollToTop()" class="btn btn-primary rounded-circle"
+    style="display:none; position:fixed; bottom:25px; right:25px; width:45px; height:45px; z-index:999;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
